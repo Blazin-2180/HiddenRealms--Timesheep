@@ -13,11 +13,13 @@ const CARD_DRAW_SPEED : float = 0.4
 @onready var cards_left_label : RichTextLabel = $cards_left_label
 
 ## STANDARD VARIABLES ##
-var player_deck : Array = ["Bonbon Hero", "Bonbon Hero", "Bonbon Hero"]
+var player_deck : Array = ["Fawnie", "ForestGuardian", "ForestGuardian", "BMog"]
+var card_database_reference = preload("res://scripts/card_database.gd")
 #endregion
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	player_deck.shuffle()
 	cards_left_label.text = str(player_deck.size())
 	print($Area2D.collision_mask)
 	pass # Replace with function body.
@@ -37,6 +39,13 @@ func draw_card():
 	cards_left_label.text = str(player_deck.size())
 	var card_scene = preload( CARD_SCENE_PATH )
 	var new_card = card_scene.instantiate()
+	var card_image_path = str( "res://assets/" + card_drawn + ".png" )
+	new_card.get_node("card_image").texture = load( card_image_path )
+	new_card.get_node( "Health").text = str(card_database_reference.CARDS[card_drawn][0])
+	new_card.get_node( "Attack").text = str(card_database_reference.CARDS[card_drawn][1])
+	new_card.get_node( "Defence").text = str(card_database_reference.CARDS[card_drawn][2])
+	new_card.get_node( "Cost").text = str(card_database_reference.CARDS[card_drawn][3])
 	card_manager.add_child( new_card )
 	new_card.name = "Card"
 	player_hand.add_card_to_hand( new_card, CARD_DRAW_SPEED )
+	new_card.get_node("AnimationPlayer").play("card_flip")

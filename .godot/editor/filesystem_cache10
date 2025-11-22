@@ -1,19 +1,26 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1763832593
+::res://::1763841556
 README.md::TextFile::-1::1763823306::0::1::::<><><>0<>0<><>::
-::res://assets/::1763830499
+::res://assets/::1763841556
 000 - Bonbon - Hero-FullFoil.png::CompressedTexture2D::4113002722044025225::1763821773::1763823397::1::::<><><>0<>0<>700572c7d7ee4121128e001bd499f977<>res://.godot/imported/000 - Bonbon - Hero-FullFoil.png-8f1db696850ec6a20281f82a6f91a0da.ctex::
 000 - CardBack-HiddenRealms1.png::CompressedTexture2D::2050829517487325537::1763830258::1763830290::1::::<><><>0<>0<>cc0a42ae740d655a3f7ad3a27590ef6e<>res://.godot/imported/000 - CardBack-HiddenRealms1.png-7592df66c04ab801184eda2eaa7a3aac.ctex::
+BMog.png::CompressedTexture2D::7923747910833091400::1763837923::1763841556::1::::<><><>0<>0<>428df4fc271ab55151ba96faf8819af4<>res://.godot/imported/BMog.png-7ce201f29d23ffea0e6f146e7822fdb4.ctex::
 card_slot_indicator.png::CompressedTexture2D::7800490512058172386::1763826759::1763826763::1::::<><><>0<>0<>8bafeb2ab4e858c91337ce72db667793<>res://.godot/imported/card_slot_indicator.png-84ab6416ca831d1c1b961af7c33ad221.ctex::
+dice_spritesheet.png::CompressedTexture2D::2424374524981144967::1763839481::1763839486::1::::<><><>0<>0<>0fc908f9254350c67da02956345efad7<>res://.godot/imported/dice_spritesheet.png-70dbee63fd8ac90688e12cdd49b4f7c1.ctex::
+Fawnie.png::CompressedTexture2D::1947486560110201994::1763837935::1763841352::1::::<><><>0<>0<>3d83a77ae454255a1cdcfbf250f6d30a<>res://.godot/imported/Fawnie.png-517191effef339ed7adb7f93c0a4a86a.ctex::
+ForestGuardian.png::CompressedTexture2D::8329232828425377468::1763837944::1763841339::1::::<><><>0<>0<>1c4d73a512994a1dbbad5a744577fef6<>res://.godot/imported/ForestGuardian.png-20ba03243d3de7fc913634f8d9b0a671.ctex::
 icon.svg::CompressedTexture2D::3895134631564477742::1763821683::1763830499::1::::<><><>0<>0<>fb136fa19a0307019468dd5281cd646e<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
-::res://scenes/::1763832585
-card.tscn::PackedScene::7529196034005946360::1763827613::0::1::::<><><>0<>0<><>::uid://byums3lcl6u5v::::res://assets/000 - Bonbon - Hero-FullFoil.png<>uid://d2xib5viuivl6::::res://scripts/card.gd
+::res://scenes/::1763841509
+card.tscn::PackedScene::7529196034005946360::1763841509::0::1::::<><><>0<>0<><>::uid://byums3lcl6u5v::::res://assets/000 - Bonbon - Hero-FullFoil.png<>uid://d2xib5viuivl6::::res://scripts/card.gd
 card_slot.tscn::PackedScene::7800718068514176558::1763827616::0::1::::<><><>0<>0<><>::uid://bwr38q07j5mfy::::res://scripts/card_slot.gd<>uid://djeu66td62v6i::::res://assets/card_slot_indicator.png
-main.tscn::PackedScene::632673931449955272::1763832585::0::1::::<><><>0<>0<><>::uid://bbkplr4dxt32::::res://scripts/card_manager.gd<>uid://ckgbub3q5ixi::::res://scripts/player_hand.gd<>uid://djeyxmbq3s7io::::res://scenes/card_slot.tscn<>uid://4ho4lcuvtoq8::::res://assets/000 - CardBack-HiddenRealms1.png<>uid://xefqsjnvu15h::::res://scripts/deck.gd<>uid://b46fscy14w4jb::::res://scripts/input_manager.gd
-::res://scripts/::1763832449
+dice_roll.tscn::PackedScene::26089445301827453::1763839831::0::1::::<><><>0<>0<><>::uid://hlif1fhwfetv::::res://scripts/dice_roll.gd<>uid://basndg6i1augl::::res://assets/dice_spritesheet.png
+main.tscn::PackedScene::632673931449955272::1763839864::0::1::::<><><>0<>0<><>::uid://mvxo5ko3dk4::::res://scenes/dice_roll.tscn<>uid://bbkplr4dxt32::::res://scripts/card_manager.gd<>uid://ckgbub3q5ixi::::res://scripts/player_hand.gd<>uid://djeyxmbq3s7io::::res://scenes/card_slot.tscn<>uid://4ho4lcuvtoq8::::res://assets/000 - CardBack-HiddenRealms1.png<>uid://xefqsjnvu15h::::res://scripts/deck.gd<>uid://b46fscy14w4jb::::res://scripts/input_manager.gd
+::res://scripts/::1763841542
 card.gd::GDScript::9102330647917535273::1763829155::0::1::::<>Node2D<><>0<>0<><>::
-card_manager.gd::GDScript::72887783569420135::1763832380::0::1::::CardManager<>Node2D<><>0<>0<><>::
+card_database.gd::GDScript::5117901348612044527::1763841542::0::1::::<>RefCounted<><>0<>0<><>::
+card_manager.gd::GDScript::72887783569420135::1763837580::0::1::::CardManager<>Node2D<><>0<>0<><>::
 card_slot.gd::GDScript::3967429553006018738::1763827472::0::1::::CardSlot<>Node2D<><>0<>0<><>::
-deck.gd::GDScript::1622934032300377659::1763832380::0::1::::Deck<>Node2D<><>0<>0<><>::
-input_manager.gd::GDScript::4486228732168993255::1763832449::0::1::::<>Node2D<><>0<>0<><>::
-player_hand.gd::GDScript::161388605873735910::1763831576::0::1::::PlayerHand<>Node2D<><>0<>0<><>::
+deck.gd::GDScript::1622934032300377659::1763841542::0::1::::Deck<>Node2D<><>0<>0<><>::
+dice_roll.gd::GDScript::514526099351315411::1763840155::0::1::::<>Node2D<><>0<>0<><>::
+input_manager.gd::GDScript::4486228732168993255::1763833117::0::1::::<>Node2D<><>0<>0<><>::
+player_hand.gd::GDScript::161388605873735910::1763837664::0::1::::PlayerHand<>Node2D<><>0<>0<><>::

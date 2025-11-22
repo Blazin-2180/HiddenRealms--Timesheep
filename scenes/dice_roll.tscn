@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://mvxo5ko3dk4"]
+
+[ext_resource type="Script" uid="uid://hlif1fhwfetv" path="res://scripts/dice_roll.gd" id="1_32dyi"]
+[ext_resource type="Texture2D" uid="uid://basndg6i1augl" path="res://assets/dice_spritesheet.png" id="2_yn8eg"]
+
+[node name="dice_roll" type="Node2D"]
+script = ExtResource("1_32dyi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_yn8eg")
+hframes = 3
+vframes = 2

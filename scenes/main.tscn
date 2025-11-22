@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://jaqbut1wmonw"]
+[gd_scene load_steps=9 format=3 uid="uid://jaqbut1wmonw"]
 
+[ext_resource type="PackedScene" uid="uid://mvxo5ko3dk4" path="res://scenes/dice_roll.tscn" id="1_o6xl0"]
 [ext_resource type="Script" uid="uid://bbkplr4dxt32" path="res://scripts/card_manager.gd" id="1_sugp2"]
 [ext_resource type="Script" uid="uid://ckgbub3q5ixi" path="res://scripts/player_hand.gd" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://djeyxmbq3s7io" path="res://scenes/card_slot.tscn" id="3_tbgi4"]
@@ -11,6 +12,9 @@
 size = Vector2(154, 216)
 
 [node name="main" type="Node2D"]
+
+[node name="dice_roll" parent="." instance=ExtResource("1_o6xl0")]
+position = Vector2(1812, 1019)
 
 [node name="card_manager" type="Node2D" parent="."]
 script = ExtResource("1_sugp2")
