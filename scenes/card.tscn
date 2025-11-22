@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dfjg02aalop2g"]
 
 [ext_resource type="Texture2D" uid="uid://byums3lcl6u5v" path="res://assets/000 - Bonbon - Hero-FullFoil.png" id="1_kikvd"]
-[ext_resource type="Script" uid="uid://d2xib5viuivl6" path="res://card.gd" id="1_rjlel"]
+[ext_resource type="Script" uid="uid://d2xib5viuivl6" path="res://scripts/card.gd" id="1_rjlel"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjlel"]
 size = Vector2(154, 216)

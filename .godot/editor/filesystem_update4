@@ -1,1 +1,8 @@
 res://card_manager.gd
+res://main.tscn
+res://card_slot.tscn
+res://card_slot.gd
+res://card.gd
+res://scenes/card.tscn
+res://scenes/main.tscn
+res://scenes/card_slot.tscn

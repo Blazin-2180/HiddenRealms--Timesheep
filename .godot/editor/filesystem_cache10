@@ -1,10 +1,15 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1763825264
-card.gd::GDScript::9102330647917535273::1763824006::0::1::::<>Node2D<><>0<>0<><>::
-card.tscn::PackedScene::7529196034005946360::1763823539::0::1::::<><><>0<>0<><>::uid://byums3lcl6u5v::::res://assets/000 - Bonbon - Hero-FullFoil.png<>uid://d2xib5viuivl6::::res://card.gd
-card_manager.gd::GDScript::72887783569420135::1763825189::0::1::::CardManager<>Node2D<><>0<>0<><>::
+::res://::1763827615
+card_slot.gd::GDScript::3967429553006018738::1763827472::0::1::::CardSlot<>Node2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D::3895134631564477742::1763821683::1763823397::1::::<><><>0<>0<>853e258680152223f38ff83d998194a8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.tscn::PackedScene::632673931449955272::1763825258::0::1::::<><><>0<>0<><>::uid://bbkplr4dxt32::::res://card_manager.gd<>uid://dfjg02aalop2g::::res://card.tscn
 README.md::TextFile::-1::1763823306::0::1::::<><><>0<>0<><>::
-::res://assets/::1763823397
+::res://assets/::1763826763
 000 - Bonbon - Hero-FullFoil.png::CompressedTexture2D::4113002722044025225::1763821773::1763823397::1::::<><><>0<>0<>700572c7d7ee4121128e001bd499f977<>res://.godot/imported/000 - Bonbon - Hero-FullFoil.png-8f1db696850ec6a20281f82a6f91a0da.ctex::
+card_slot_indicator.png::CompressedTexture2D::7800490512058172386::1763826759::1763826763::1::::<><><>0<>0<>8bafeb2ab4e858c91337ce72db667793<>res://.godot/imported/card_slot_indicator.png-84ab6416ca831d1c1b961af7c33ad221.ctex::
+::res://scenes/::1763827615
+card.tscn::PackedScene::7529196034005946360::1763827613::0::1::::<><><>0<>0<><>::uid://byums3lcl6u5v::::res://assets/000 - Bonbon - Hero-FullFoil.png<>uid://d2xib5viuivl6::::res://card.gd
+card_slot.tscn::PackedScene::7800718068514176558::1763827616::0::1::::<><><>0<>0<><>::uid://bwr38q07j5mfy::::res://card_slot.gd<>uid://djeu66td62v6i::::res://assets/card_slot_indicator.png
+main.tscn::PackedScene::632673931449955272::1763827615::0::1::::<><><>0<>0<><>::uid://bbkplr4dxt32::::res://scripts/card_manager.gd<>uid://dfjg02aalop2g::::res://scenes/card.tscn<>uid://djeyxmbq3s7io::::res://scenes/card_slot.tscn
+::res://scripts/::1763827615
+card.gd::GDScript::9102330647917535273::1763827422::0::1::::<>Node2D<><>0<>0<><>::
+card_manager.gd::GDScript::72887783569420135::1763827534::0::1::::CardManager<>Node2D<><>0<>0<><>::
