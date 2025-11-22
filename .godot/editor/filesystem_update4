@@ -6,3 +6,6 @@ res://card.gd
 res://scenes/card.tscn
 res://scenes/main.tscn
 res://scenes/card_slot.tscn
+res://scripts/player_hand.gd
+res://scripts/card.gd
+res://scripts/card_manager.gd

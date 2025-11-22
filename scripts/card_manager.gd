@@ -11,6 +11,9 @@ var screen_size
 var card_being_dragged 
 var is_hovering_on_card : bool
 
+## ON READY VARIABLES ##
+@onready var player_hand: PlayerHand = $"../player_hand"
+
 #endregion
 
 
@@ -47,11 +50,15 @@ func start_drag( card ) :
 func finish_drag() :
 	card_being_dragged.scale = Vector2( 1.05, 1.05 )
 	var card_slot_found = raycast_check_for_card_slot()
+	
 	if card_slot_found && !card_slot_found.card_in_slot :
+		player_hand.remove_card_from_hand( card_being_dragged )
 		#card dropped into an empty card slot
 		card_being_dragged.position = card_slot_found.position
 		card_being_dragged.get_node("Area2D/CollisionShape2D").disabled = true
 		card_slot_found.card_in_slot = true
+	else : 
+		player_hand.add_card_to_hand( card_being_dragged )
 	card_being_dragged = null
 	pass
 

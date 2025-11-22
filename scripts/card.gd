@@ -6,6 +6,8 @@ extends Node2D
 signal card_hovered
 signal card_unhovered
 
+var position_in_hand
+
 #endregion 
 
 
