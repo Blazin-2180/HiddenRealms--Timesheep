@@ -3,8 +3,9 @@ class_name CardManager extends Node2D
 #region
 
 ## CONSTANT VARIABLES ##
-const COLLISION_MASK_CARD = 1
-const COLLISION_MASK_CARD_SLOT = 2
+const COLLISION_MASK_CARD : int = 1
+const COLLISION_MASK_CARD_SLOT : int = 2
+const DEFAULT_CARD_MOVE_SPEED : float = 0.1
 
 ## STANDARD VARIABLES ##
 var screen_size 
@@ -49,7 +50,7 @@ func finish_drag() :
 		card_being_dragged.get_node("Area2D/CollisionShape2D").disabled = true
 		card_slot_found.card_in_slot = true
 	else : 
-		player_hand.add_card_to_hand( card_being_dragged )
+		player_hand.add_card_to_hand( card_being_dragged, DEFAULT_CARD_MOVE_SPEED )
 	card_being_dragged = null
 	pass
 
