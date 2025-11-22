@@ -13,12 +13,14 @@ var is_hovering_on_card : bool
 
 ## ON READY VARIABLES ##
 @onready var player_hand: PlayerHand = $"../player_hand"
+@onready var input_manager: Node2D = $"../input_manager"
 
 #endregion
 
 
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
+	input_manager.connect("left_mouse_button_released", on_left_click_released )
 	pass 
 	
 	
@@ -28,17 +30,6 @@ func _process(_delta: float) -> void:
 		card_being_dragged.position = Vector2( clamp( mouse_position.x, 0, screen_size.x ), 
 			clamp( mouse_position.y, 0, screen_size.y ) )
 	pass
-
-
-func _input(event: InputEvent) -> void:
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT :
-		if event.is_pressed() :
-			var card = raycast_check_for_card() 
-			if card :
-				start_drag( card )
-		else : 
-			if card_being_dragged :
-				finish_drag()
 
 
 func start_drag( card ) :
@@ -66,6 +57,12 @@ func finish_drag() :
 func connect_card_signals( card ) -> void :
 	card.connect("card_hovered", on_hovered_over_card)
 	card.connect("card_unhovered", on_hovered_left_card)
+
+
+func on_left_click_released() :
+	if card_being_dragged :
+		finish_drag()
+	print("Card manager left mouse clicked")
 
 
 func on_hovered_over_card( card ) -> void :

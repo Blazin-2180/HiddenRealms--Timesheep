@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://jaqbut1wmonw"]
+[gd_scene load_steps=8 format=3 uid="uid://jaqbut1wmonw"]
 
 [ext_resource type="Script" uid="uid://bbkplr4dxt32" path="res://scripts/card_manager.gd" id="1_sugp2"]
 [ext_resource type="Script" uid="uid://ckgbub3q5ixi" path="res://scripts/player_hand.gd" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://djeyxmbq3s7io" path="res://scenes/card_slot.tscn" id="3_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://4ho4lcuvtoq8" path="res://assets/000 - CardBack-HiddenRealms1.png" id="4_jyhfs"]
+[ext_resource type="Script" uid="uid://xefqsjnvu15h" path="res://scripts/deck.gd" id="4_tefeu"]
+[ext_resource type="Script" uid="uid://b46fscy14w4jb" path="res://scripts/input_manager.gd" id="6_o6xl0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbgi4"]
+size = Vector2(154, 216)
 
 [node name="main" type="Node2D"]
 
@@ -26,3 +32,22 @@ position = Vector2(1350, 685)
 
 [node name="player_hand" type="Node2D" parent="."]
 script = ExtResource("3_sugp2")
+
+[node name="deck" type="Node2D" parent="."]
+position = Vector2(150, 920)
+script = ExtResource("4_tefeu")
+
+[node name="Sprite2D" type="Sprite2D" parent="deck"]
+position = Vector2(-8.583069e-06, 4.7683716e-06)
+scale = Vector2(0.1550856, 0.15508558)
+texture = ExtResource("4_jyhfs")
+
+[node name="Area2D" type="Area2D" parent="deck"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="deck/Area2D"]
+shape = SubResource("RectangleShape2D_tbgi4")
+
+[node name="input_manager" type="Node2D" parent="."]
+script = ExtResource("6_o6xl0")

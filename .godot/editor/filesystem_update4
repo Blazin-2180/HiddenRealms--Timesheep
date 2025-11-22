@@ -1,11 +1,5 @@
-res://card_manager.gd
-res://main.tscn
-res://card_slot.tscn
-res://card_slot.gd
-res://card.gd
-res://scenes/card.tscn
-res://scenes/main.tscn
-res://scenes/card_slot.tscn
-res://scripts/player_hand.gd
-res://scripts/card.gd
+res://scripts/input_manager.gd
 res://scripts/card_manager.gd
+res://scripts/deck.gd
+res://scripts/player_hand.gd
+res://scenes/main.tscn
